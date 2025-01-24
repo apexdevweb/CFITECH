@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", serif;
+}
+:root {
+  --box-shadow-boxsdhw1: 0px 0px 3px #000;
+  --text-shadow-txtsdhw1: 0px 0px 3px #000;
+}
+/*Style onglet */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/*Style des boutonsn de navigation */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+/*Change background au survole de la souris */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/*Creer un active/sur la tab actuel */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/*Style du contenue des onglets */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/*Style des boutons des chambre ""*/
+.Allchambre__container--set {
+  height: auto;
+  width: 100%;
+  border: 1px solid #555;
+  background: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+/*titres des contenus des onglets*/
+.titre--onglets {
+  text-decoration: underline;
+}
+.Allchambre__container--set > form {
+  height: auto;
+  max-width: 50vw;
+}
+.Allchambre__name--set > p {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
+}
+.button {
+  height: 3vh;
+  width: 8vw;
+  font-weight: 100;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background: transparent;
+  filter: drop-shadow(0px 0px 1px #000);
+  letter-spacing: 2px;
+  border: none;
+}
+.button:hover {
+  border: 1px solid #000;
+}
+/*container de recherche*/
+h2 {
+  color: #fff;
+}
+.search__container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+  background-color: #555;
+}
+.search__form {
+  height: 20vh;
+  max-width: 50vw;
+}
+input,
+select {
+  height: 3vh;
+  border-radius: 10px;
+}
+#hr1 {
+  height: 2px;
+  width: 90vw;
+  border: none;
+  background-color: #000;
+  color: #000;
+  border-radius: 10px;
+}
+#hr2 {
+  height: 2px;
+  width: 70vw;
+  border: none;
+  background-color: #000;
+  color: #000;
+  border-radius: 10px;
+}
+#hr3 {
+  height: 2px;
+  width: 50vw;
+  border: none;
+  background-color: #000;
+  color: #000;
+  border-radius: 10px;
+}

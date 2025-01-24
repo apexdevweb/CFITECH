@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="asset/library.css">
+    <title>Library System</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="mainTitle">Welcome to the Library System</h1>
+    </header>
+    <main>
+        <section class="library__container" aria-live="polite">
+            <h2><span>B</span>ooks list</h2>
+            <div class="globale-container">
+                <button id="launchSystem">Launch System <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="listbooks"></div>
+                <video src="asset/img/wallpappervid.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr id="seprate1">
+        <p>&copy; 2025 Library System Made in Cfitech. All rights reserved.</p>
+        <small>by Mohamed-ali, Jeremy, Josué.</small>
+        <hr id="seprate2">
+    </footer>
+    <script src="asset/library.js"></script>
+    <script type="text/javascript">
+        document.getElementById("launchSystem").addEventListener("click", launcher);
+    </script>
+</body>
+
+</html>

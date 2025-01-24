@@ -1,0 +1,383 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* :root {
+  --font-family-ftfmPrimary: "Playwrite AU SA", serif;
+  --font-family-ftfmSecondary: Verdana, Geneva, Tahoma, sans-serif;
+  --font-size-ftszSmall: 1rem;
+  --font-size-ftszMedium: 1.8rem;
+  --font-size-ftszBig: 4rem;
+} */
+/* main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-image: radial-gradient(
+      at 40% 20%,
+      rgba(255, 184, 122, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, rgba(31, 221, 255, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(255, 219, 222, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(255, 133, 173, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 181, 138, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(107, 102, 255, 1) 0px, transparent 50%);
+}
+
+/*Titre principale*/
+/* h1 {
+  color: #fff;
+  font-family: var(--font-family-ftfmPrimary);
+  text-align: center;
+} */
+/*Globale slider*/
+/* .slider {
+  position: relative;
+  border-bottom: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.slide-row {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  @media screen and (max-width: 425px) {
+    height: auto;
+    width: 100%;
+  }
+}
+.slide-col {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 425px) {
+    height: auto;
+    width: 120vw;
+  }
+}
+.content {
+  padding: 20px;
+  font-size: var(--font-size-ftszSmall);
+  font-family: var(--font-family-ftfmSecondary);
+  height: 35vh;
+  width: 25vw;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.621);
+  color: firebrick;
+  @media screen and (max-width: 425px) {
+    z-index: 0;
+    height: 50vh;
+    width: 100vw;
+  }
+} */
+
+/* .hero {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 100%;
+} */
+
+/* .hero > img {
+  height: 60vh;
+  width: 25vw;
+  border-radius: 15px;
+  @media screen and (max-width: 425px) {
+    position: relative;
+    margin-left: -60vw;
+    z-index: 99;
+    height: 25vh;
+    width: 45vw;
+  }
+} */
+/*Boutons slider*/
+/* .indicator {
+  z-index: 99;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
+  width: 50vw;
+  background-color: #fff;
+}
+.btn {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.btn:hover {
+  transform: scale(1.09);
+  filter: drop-shadow(0px 0px 5px #000);
+}
+.active {
+  height: 30px;
+  width: 70px;
+  border-end-end-radius: 50%;
+  border-start-start-radius: 50%;
+} */
+/*responsive*/
+
+/* @media screen and (max-width: 425px) {
+}
+@media (min-width: 425px) and (max-width: 768px) {
+}  */
+/*↓↓↓code de Benoît↓↓↓*/
+/*
+ * 
+ * Responsive Slider
+ * 
+ * 
+ * 
+ *
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --primary-color: #fff;
+
+  --quaternary-color: #9e5050;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.4rem; /* equivalent to 14px */
+  line-height: 2.2rem; /* equivalent to 22px */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  width: 100%;
+  background-image: radial-gradient(
+      at 40% 20%,
+      rgba(255, 184, 122, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, rgba(31, 221, 255, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(255, 219, 222, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(255, 133, 173, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 181, 138, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(107, 102, 255, 1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 80rem; /* 800px / 10 */
+}
+
+main h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--primary-color);
+  margin-bottom: 7rem; /* 70px / 10 */
+}
+
+.slide-row {
+  display: flex;
+  width: 320rem; /* 3200px / 10 */
+  transition: 0.5s;
+}
+
+.slide-col {
+  position: relative;
+  width: 80rem; /* 800px / 10 */
+  height: 40rem; /* 400px / 10 */
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height: 100%;
+}
+
+.hero img {
+  height: 100%;
+  border-radius: 1rem; /* 10px / 10 */
+  width: 32rem; /* 320px / 10 */
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52rem; /* 520px / 10 */
+  height: 27rem; /* 270px / 10 */
+  color: var(--quaternary-color);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem; /* 10px / 10 */
+  padding: 4.5rem; /* 45px / 10 */
+  user-select: none;
+}
+
+.content p {
+  font-size: 1.25rem; /* 20px / 16 */
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.content h2 {
+  font-size: 1.5rem; /* 24px / 16 */
+  font-weight: 600;
+  margin-top: 3.5rem; /* 35px / 10 */
+  color: var(--quaternary-color);
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem; /* 40px / 10 */
+}
+
+.indicator .btn {
+  display: inline-block;
+  height: 1.5rem; /* 15px / 10 */
+  width: 1.5rem; /* 15px / 10 */
+  margin: 0.4rem; /* 4px / 10 */
+  border-radius: 1.5rem; /* 15px / 10 */
+  background: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn.active {
+  width: 3rem; /* 30px / 10 */
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  position: fixed;
+  z-index: 10;
+  right: -2rem; /* 20px / 10 */
+  bottom: -3rem; /* 30px / 10 */
+}
+
+.logo img {
+  width: 12rem; /* 120px / 10 */
+}
+
+@media (max-width: 89rem) {
+  /* 890px / 10 */
+  .logo {
+    right: -1rem; /* 10px / 10 */
+    bottom: -2rem; /* 20px / 10 */
+  }
+
+  .logo img {
+    width: 8rem; /* 80px / 10 */
+  }
+}
+
+@media (max-width: 85rem) {
+  /* 850px / 10 */
+  main {
+    width: 50rem; /* 500px / 10 */
+  }
+
+  .slide-row {
+    width: 200rem; /* 2000px / 10 */
+  }
+
+  .slide-col {
+    width: 50rem; /* 500px / 10 */
+    height: 25rem; /* 250px / 10 */
+  }
+
+  .hero img {
+    width: 20rem; /* 200px / 10 */
+  }
+
+  .content {
+    width: 32rem; /* 320px / 10 */
+    height: 20rem; /* 200px / 10 */
+    padding: 2rem; /* 20px / 10 */
+  }
+
+  .content p {
+    font-size: 0.9rem; /* 14.4px / 16 */
+    width: 26ch;
+  }
+
+  .content h2 {
+    font-size: 1.2rem; /* 19.2px / 16 */
+    margin-top: 2rem; /* 20px / 10 */
+  }
+}
+
+@media (max-width: 55rem) {
+  /* 550px / 10 */
+  main {
+    width: 30rem; /* 300px / 10 */
+  }
+
+  .slide-row {
+    width: 120rem; /* 1200px / 10 */
+  }
+
+  .slide-col {
+    width: 50rem; /* 500px / 10 */
+    height: 30rem; /* 300px / 10 */
+  }
+
+  .hero {
+    top: 6rem; /* 60px / 10 */
+    height: 10rem; /* 100px / 10 */
+    z-index: 5;
+  }
+
+  .hero img {
+    width: 10rem; /* 100px / 10 */
+  }
+
+  .content {
+    width: 30rem; /* 300px / 10 */
+  }
+}
+/*↑↑↑code de Benoît fin↑↑↑*/
+.translation {
+  transform: translateX(-400px);
+}

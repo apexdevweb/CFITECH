@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  background-color: var(--clr-bg-2);
+  color: var(--clr-1);
+}
+:root {
+  --clr-bg-1: #616161;
+  --clr-bg-2: #fdf6e3;
+  --clr-accent: lightgreen;
+  --clr-1: white;
+}
+
+header,
+nav,
+.primary-ul {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--clr-bg-1);
+}
+.primary__li {
+  height: auto;
+  width: auto;
+  list-style-type: none;
+}
+a {
+  color: var(--clr-1);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--clr-accent);
+}
+.secondary-ul {
+  display: none;
+  height: 10vh;
+  width: 15vw;
+}
+.secondary-li {
+  height: auto;
+  width: auto;
+  list-style-type: none;
+}
+/*le pop*/
+/*le pop fin*/
+.btn {
+  height: 5vh;
+  width: 8vw;
+  box-shadow: 3px 4px 0px #000;
+  font-size: 1.3rem;
+}
+.btn:hover {
+  transform: translateY(10px, 20px);
+}
+/* .text-lg {
+} */
+.card {
+  height: 25vh;
+  width: 25vw;
+}

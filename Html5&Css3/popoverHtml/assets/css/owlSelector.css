@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*↓↓Globale size↓↓*/
+header,
+.container,
+.container__sub {
+  height: auto;
+  width: 100%;
+}
+/*↓↓Globale border↓↓*/
+header,
+.artcl {
+  border: 1px solid #000;
+}
+/*↓↓ow Selector↓↓*/
+* + * {
+  margin-top: 2rem;
+}
+header {
+  text-align: left;
+}
+/* MOBILE FIRST */
+/*↓↓header↓↓*/
+
+/*↓↓section principale "Wrapper"↓↓*/
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container__sub {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+/*↓↓Articles↓↓*/
+.artcl {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #000;
+}
+/**************↓↓Contenus des articles↓↓************************/
+/* MOBILE FIRST FIN*/
+
+@media screen and (min-width: 426px) {
+  .container__sub {
+    flex-flow: row nowrap;
+  }
+}

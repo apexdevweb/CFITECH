@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#ExoContain {
+  height: auto;
+  width: 100%;
+}
+.container {
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  width: 20vw;
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+.cercle {
+  height: 15vh;
+  width: 10vw;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/*classe ajouté avec le javascript*/
+.fire1 {
+  background-color: red;
+  transition: 0.3s ease-in-out;
+}
+.fire2 {
+  background-color: orange;
+  transition: 0.3s ease-in-out;
+}
+.fire3 {
+  background-color: green;
+  transition: 0.3s ease-in-out;
+}

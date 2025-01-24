@@ -1,0 +1,157 @@
+/*/↓↓↓/////////////////////↓↓↓JOSUE↓↓↓//////////////////////////////////////↓↓↓*/
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+}
+
+#mainTitle {
+  font-family: "Playwrite AU SA", serif;
+  font-size: 3.5rem;
+  margin: 0;
+  color: transparent;
+  background: #000 url("img/cfa6c520a394652ff0741baf80339d06.jpeg") no-repeat
+    50% 50%;
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.library__container {
+  margin: 20px auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 80vw;
+  background: url("img/cfa6c520a394652ff0741baf80339d06.jpeg") no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.library__container > h2 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Playwrite AU SA", serif;
+  text-decoration: underline;
+  text-shadow: 0px 0px 3px #fff;
+}
+
+.globale-container {
+  display: block;
+  height: 50vh;
+  width: 80vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.listbooks {
+  position: fixed;
+  margin-top: 10vh;
+  margin-left: 25vw;
+  margin-right: auto;
+  display: none;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 0;
+  width: 0;
+  backdrop-filter: blur(5px);
+  border: 1px solid #fff;
+  z-index: 99;
+  border-radius: 10px;
+}
+video {
+  transform: translateY(-25vh);
+  height: auto;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+#launchSystem {
+  position: absolute;
+  font-family: "Playwrite AU SA", serif;
+  height: 50px;
+  width: 12vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  z-index: 99;
+  mix-blend-mode: overlay;
+  animation: viewbtn 1s ease 0s 1 normal forwards;
+}
+
+#launchSystem:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+  transform: scale(1.09);
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+
+.addBook {
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  z-index: 99;
+}
+#seprate1 {
+  height: 2px;
+  background-color: #000;
+  border: none;
+  animation: expand 1s ease 0s 1 normal forwards;
+}
+#seprate2 {
+  height: 2px;
+  background-color: #000;
+  border: none;
+  animation: expand 1.5s ease 0.3s 1 normal forwards;
+}
+@keyframes expand {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes viewbtn {
+  from {
+    opacity: 0.1;
+    transform: translateY(-90px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+footer {
+  height: auto;
+  width: 80vw;
+}

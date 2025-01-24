@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library System</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titrePrincipale"></h1>
+    </header>
+    <main>
+        <button id="launchSystem" onclick="launcher()">launchSystem</button>
+        <section class="library__container">
+        </section>
+    </main>
+    <footer></footer>
+    <!-- ↓↓importation du script extern↓↓ -->
+    <script src="app.js"></script>
+    <!-- ↓↓création du titre en javascript↓↓ -->
+    <script type="text/javascript">
+        const titre = document.getElementById("titrePrincipale");
+        let titreContent = document.createTextNode("Welcome to the Library System");
+        titre.appendChild(titreContent);
+    </script>
+</body>
+
+</html>

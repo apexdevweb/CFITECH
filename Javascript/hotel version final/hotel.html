@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel</title>
+</head>
+
+<body>
+    <!-- Onglets de navigation "class=tablinks" -->
+    <div class="tab">
+        <button class="tablinks" onclick="ongletSystem(event, 'add')">
+            Add room
+        </button>
+        <button class="tablinks" onclick="ongletSystem(event, 'listGlobale')">
+            List all rooms
+        </button>
+        <button class="tablinks" onclick="ongletSystem(event, 'listAvailable')">
+            List available rooms
+        </button>
+    </div>
+    <hr id="hr1">
+    <hr id="hr2">
+    <hr id="hr3">
+
+    <!-- Container de recherche -->
+    <div class="search__container">
+        <h2>Search rooms</h2>
+        <form method="GET" class="search__form" onsubmit="hotel.chercherChambre(); return false;">
+            <select name="type_chambre" id="typeSearchChambre">
+                <option selected>Type:</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Suite">Suite</option>
+            </select>
+            <input type="number" name="maxPrice" id="maxPrice" placeholder="max-price:" />
+            <input type="search" name="recherche" placeholder="Rechercher" id="searchField" maxlength="150" />
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <hr id="hr3">
+    <hr id="hr2">
+    <hr id="hr1">
+    <!-- Contenu des onglets "class=tabcontent" -->
+    <div id="add" class="tabcontent">
+        <h3 class="titre--onglets">Add room</h3>
+        <form class="form__setting--chambre" onsubmit="addRoom(event)">
+            <input type="number" id="prix" placeholder="Prix" />
+            <input type="number" id="numro" placeholder="Numéro" />
+            <select id="typeChambre">
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Suite">Suite</option>
+            </select>
+            <input type="submit" value="Enregistrer" />
+        </form>
+    </div>
+    <div id="listGlobale" class="tabcontent">
+        <h3 class="titre--onglets">All rooms</h3>
+        <div class="Allchambre__container--set">
+        </div>
+    </div>
+    <div id="listAvailable" class="tabcontent">
+        <h3 class="titre--onglets">Available rooms</h3>
+        <div class="Allchambre__container--set">
+        </div>
+    </div>
+    <script src="ongletSystem.js"></script>
+    <script src="hotelFinal.js"></script>
+</body>
+
+</html>

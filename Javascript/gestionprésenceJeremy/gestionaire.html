@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gestion.css" />
+    <title>Gestionaire</title>
+</head>
+
+<body>
+    <h1>Système de gestion des présences</h1>
+    <hr />
+    <form id="presenceForm">
+        <input type="text" id="stagiaireName" placeholder="Entrez le nom du stagiaire" required />
+        <button type="submit">Ajouter</button>
+    </form>
+    <hr />
+    <table id="stagiaireTable">
+        <th>
+            <tr>
+                <td>#</td>
+                <td>Nom</td>
+                <td>Action</td>
+                <td>Present/abscent</td>
+            </tr>
+        </th>
+        <tr>
+            <!-- ajout des stagiaires -->
+        </tr>
+    </table>
+
+    <p id="emptyMessage" class="empty-message">
+        Aucun stagiaire ajouté pour l'instant
+    </p>
+
+    <script src="gestionaire.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Devoir javascript jeremy</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exo JS</h1>
+    </header>
+    <section id="ExoContain">
+        <button onclick="changeColor()">Start</button>
+        <button onclick="changeColorStop()">Stop</button>
+        <div class="container">
+            <div class="cercle" id="F1"></div>
+            <div class="cercle" id="F2"></div>
+            <div class="cercle" id="F3"></div>
+        </div>
+    </section>
+    <script src="exo.js"></script>
+</body>
+
+</html>
+
+<!-- <script type="text/javascript">
+
+    const container = document.getElementById("divTP1");
+    let strng = document.createElement("strong");
+    let strngTxt = document.createTextNode("World Wide Web Consortium");
+    container.appendChild(strng);
+    strng.appendChild(strngTxt);
+    let link = document.createElement("a");
+    link.id = "liens";
+    link.href = "index.html";
+    let linkTxt = document.createTextNode("Retour à l'index");
+    container.appendChild(link).innerHTML = "<br>".repeat(2);
+    link.appendChild(linkTxt);
+    let linkClone = link.cloneNode(true);
+    linkClone.setAttribute("class", "clnLink");
+    container.appendChild(linkClone);
+    let MyLinks = [link, linkClone];
+    MyLinks.forEach((lkns) => {
+        lkns.addEventListener("mouseover", () => {
+            lkns.style.textDecoration = "underline";
+        });
+        lkns.addEventListener("mouseout", () => {
+            lkns.style.textDecoration = "none";
+        });
+    });
+
+    let para = document.createElement("div");
+    para.setAttribute("class", "myPara");
+    container.appendChild(para);
+    let paraTxt = document.createTextNode("à but non-lucratif chargé de promouvoir la compatibilité des technologies du");
+    para.appendChild(paraTxt);
+
+    let ericZemour = () => {
+        let leGrandRemplacement = document.createTextNode("Remplacer!!!")
+        paraTxt.replaceWith(leGrandRemplacement);
+    };
+    ericZemour();
+
+    let btn = document.createElement("button");
+    btn.setAttribute("id", "Remplacer");
+    btn.textContent = "Remplacer"
+    container.appendChild(btn);
+
+
+    console.log(strng + strngTxt + container + link);
+</script> -->
