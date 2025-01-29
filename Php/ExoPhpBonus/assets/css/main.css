@@ -1,4 +1,7 @@
 .section__main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
   height: auto;
   width: 100%;
   display: flex;

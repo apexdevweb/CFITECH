@@ -42,3 +42,64 @@
   border-radius: 10px;
   border: none;
 }
+/*converter form & fieldset & legend*/
+.converter__field {
+  text-align: center;
+  min-height: 25vh;
+  min-width: 50vw;
+  border-radius: 10px;
+}
+.converter__legend {
+  font-family: var(--font-family-ftfmOne);
+  color: #fff;
+  text-shadow: var(--text-shadow-txtShdw);
+  font-size: var(--font-size-ftzMedium);
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.converter__form {
+  min-height: 25vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.converter__btnSwitcher {
+  min-height: 6vh;
+  width: 10vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-ftzMedium);
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.converter__subcontainer > input[type="number"] {
+  min-height: 3vh;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: var(--font-size-ftzSmall);
+}
+.converter__subcontainer > input[type="submit"] {
+  min-height: 3vh;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #000;
+  font-size: var(--font-size-ftzSmall);
+}
+.converter__subcontainer > input[type="submit"]:hover {
+  color: #fff;
+  border: 1px solid #000;
+  box-shadow: var(--box-shadow-drpShdw);
+}
+.converter__btnSwitcher:hover {
+  color: #fff;
+  border: 1px solid #000;
+  box-shadow: var(--box-shadow-drpShdw);
+}
+/*converter form & fieldset & legend  fin*/
