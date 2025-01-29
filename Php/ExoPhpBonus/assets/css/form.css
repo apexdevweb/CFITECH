@@ -1,0 +1,44 @@
+.wrapper__log {
+  height: auto;
+  width: 100%;
+}
+.retour__btn--login {
+  margin-left: 100px;
+  font-size: var(--font-size-ftzSmall);
+  font-family: var(--font-family-ftfmOne);
+  color: #000;
+  text-decoration: none;
+  text-shadow: var(--text-shadow-txtShdw);
+  letter-spacing: 1px;
+}
+.retour__btn--login:hover {
+  text-decoration: underline;
+}
+.form__login {
+  margin: 25vh auto auto auto;
+  height: 25vh;
+  width: 50vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aqua;
+  border-radius: 10px;
+  background: var(--background-gradient);
+}
+.form__login > input[type="submit"] {
+  font-family: var(--font-family-ftfmTwo);
+  text-align: center;
+}
+.form__login > input[type="submit"]:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
+  transform: scale(1.09);
+  box-shadow: var(--box-shadow-drpShdw);
+}
+.form__login--ipt {
+  height: 3vh;
+  max-width: 12vw;
+  border-radius: 10px;
+  border: none;
+}

@@ -1,0 +1,34 @@
+.section__main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main__hr1 {
+  height: 6px;
+  width: 75vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.main__hr2 {
+  height: 6px;
+  width: 50vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.main__hr3 {
+  height: 6px;
+  width: 25vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.wrapper__main {
+  height: auto;
+  width: 100%;
+  background: var(--background-gradient);
+}
