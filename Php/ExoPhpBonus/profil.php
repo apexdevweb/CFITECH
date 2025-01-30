@@ -24,24 +24,38 @@ require("backend/converterAScript.php");
         <hr class="main__hr3">
         <section class="wrapper__profil">
             <?php
-            // var_dump($_SESSION['data']);
             if (isset($_SESSION['data']) && is_array($_SESSION['data'])) {
             ?>
                 <article class="profil__container">
                     <hgroup class="profil__title">
-                        <h3 class="profil__title--h3"><?= $_SESSION['data']['pseudo'] ?></h3>
-                        <h4 class="profil__title--h4"><?= $_SESSION['data']['id'] ?></h4>
+                        <h3 class="profil__title--h3"><?= htmlspecialchars($_SESSION['data']['pseudo']) ?></h3>
+                        <h4 class="profil__title--h4"><?= htmlspecialchars($_SESSION['data']['id']) ?></h4>
                     </hgroup>
                     <blockquote class="profil__list">
-                        <h5>Liste des conversions effectuer</h5>
+                        <h5>Liste des conversions effectuées</h5>
                         <?php
-                        if (isset($_SESSION["Eur/dolrs-resultat"])) {
-                        ?>
-                            <p><i class="fa-solid fa-arrow-right"></i>Euro/Usd:<?= " " . $_SESSION["Eur/dolrs-resultat"] . " " ?>USD</p>
-                        <?php
+                        // si $_SESSION["globaleconvert"] n'est pas vérifiée, on l'initialise
+                        if (!isset($_SESSION["globaleconvert"])) {
+                            $_SESSION["globaleconvert"] = [];
+                        }
 
+                        // On ajoute la nouvelle conversion uniquement si elle n'existe pas déjà dans la session
+                        if (isset($_SESSION["Eur/dolrs-resultat"])) {
+                            $newConversion = $_SESSION["Eur/dolrs-resultat"];
+                            if (!in_array($newConversion, $_SESSION["globaleconvert"])) {
+                                $_SESSION["globaleconvert"][] = $newConversion;
+                            }
+                        }
+
+                        // On affiche toutes les conversions dans la session
+                        if (!empty($_SESSION["globaleconvert"])) {
+                            foreach ($_SESSION["globaleconvert"] as $conversion) {
+                        ?>
+                                <p><i class="fa-solid fa-arrow-right"></i> Euro/Usd: <?= " " . htmlspecialchars($conversion) . " " ?>USD</p>
+                        <?php
+                            }
                         } else {
-                            echo "<p>" . "Aucune conversion effectuer pour l'instant..." . "</p>";
+                            echo "<p>Aucune conversion effectuée pour l'instant...</p>";
                         }
                         ?>
                     </blockquote>

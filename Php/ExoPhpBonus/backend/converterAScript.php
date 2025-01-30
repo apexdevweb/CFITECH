@@ -1,9 +1,7 @@
 <?php
 if (isset($_POST["convert"])) {
-    if (!empty($_POST["eur"] && $_POST["dolrs"])) {
-
+    if (!empty($_POST["eur"])) {
         $euro = htmlspecialchars($_POST["eur"]);
-        $dollars = htmlspecialchars($_POST["dolrs"]);
         //on récupère le taux de convertion de la devise en question
         $convertion_taux = 1.04;
         //on fait la devise multiplier par le taux de convertion
