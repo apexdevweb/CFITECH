@@ -26,6 +26,13 @@
   border-radius: 10px;
   background: var(--background-gradient);
 }
+.form__login > label {
+  font-size: var(--font-size-ftzSmall);
+  font-family: var(--font-family-ftfmOne);
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  letter-spacing: 2px;
+}
 .form__login > input[type="submit"] {
   font-family: var(--font-family-ftfmTwo);
   text-align: center;
