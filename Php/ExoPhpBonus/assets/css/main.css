@@ -35,3 +35,10 @@
   width: 100%;
   background: var(--background-gradient);
 }
+.converter__result {
+  font-family: var(--font-family-ftfmTwo);
+  font-size: var(--font-size-ftzMedium);
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: var(--text-shadow-txtShdw);
+}
