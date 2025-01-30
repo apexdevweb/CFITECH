@@ -2,7 +2,13 @@
 <nav>
     <ul class="primary__nav">
         <li class="primary__nav--El"><a href="index.php">Home</a></li>
-        <li class="primary__nav--El"><a href="profil.php">Profil</a></li>
+        <?php
+        if (isset($_SESSION['authtentification'])) {
+        ?>
+            <li class="primary__nav--El"><a href="profil.php">Profil</a></li>
+        <?php
+        }
+        ?>
         <li class="primary__nav--El"><a href="help.php">Help</a></li>
         <li class="primary__nav--El" id="open-sub-nav"><a href="#">Conversion<i class="fa-solid fa-chart-line"></i></a>
             <ul class="secondary__nav">
@@ -18,7 +24,7 @@
             <?php
             if (isset($_SESSION['authtentification'])) {
             ?>
-                <h4 class="tertiary__nav--h4">Bonjour: <?= $_SESSION['pseudo'] ?></h4>
+                <h4 class="tertiary__nav--h4">Bonjour: <?= $_SESSION['data']['pseudo'] ?></h4>
             <?php
             }
             ?>

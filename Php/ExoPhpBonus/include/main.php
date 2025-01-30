@@ -1,4 +1,3 @@
-<br>
 <hr class="main__hr1">
 <hr class="main__hr2">
 <hr class="main__hr3">
@@ -7,7 +6,6 @@
         <?php
         // Récupérer la page demandée
         $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-
         // Charge le bon contenu
         if (isset($_SESSION['authtentification'])) {
             switch ($page) {
@@ -30,8 +28,8 @@
                     include 'backend/converterF.php';
                     break;
                 default:
-                    echo "<h2>Bienvenue sur Easy converter ici vous pouvez choisir une devise à convertir</h2>";
-                    echo "<p>Veuillez sélectionner une conversion.</p>";
+                    echo "<h5 class='default__h5'>" . "Bienvenue sur Easy converter ici vous pouvez choisir une devise à convertir" . "</h5>";
+                    echo "<p class='defautl__p '>" . "Veuillez sélectionner une conversion." . "</p>";
                     break;
             }
         }

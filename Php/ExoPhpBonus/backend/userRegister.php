@@ -49,13 +49,17 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (!empty($_POST["user_name"]) && !empty($_POST["user_pass"])) {
 
             $utilisateur = new user($user_id, $user_name, $user_pass);
-
+            //on stock tout dans une $_SESSION[] sous form de tableaux 
+            $_SESSION['data'] = [
+                "id" => $utilisateur->getUserId(),
+                "pseudo" => $utilisateur->getName(),
+                "pass" => $utilisateur->getPass()
+            ];
+            // pour l'identification
             $_SESSION['authtentification'] = true;
-            $_SESSION['id'] = $utilisateur->getUserId();
-            $_SESSION['pseudo'] = $utilisateur->getName();
-            $_SESSION['pass'] = $utilisateur->getPass();
-
+            //on redirige l'utilisateur
             header("Location:../index.php");
+            exit;
         }
     } else {
         echo "<h3>" . "Veuillez remplir tous les champs" . "</h3>";

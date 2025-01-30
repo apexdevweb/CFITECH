@@ -42,3 +42,17 @@
   color: #fff;
   text-shadow: var(--text-shadow-txtShdw);
 }
+/*acceuille par défaut*/
+.default__h5 {
+  color: #000;
+  font-family: var(--font-family-ftfmOne);
+  font-size: var(--font-size-ftzMedium);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.defautl__p {
+  font-family: var(--font-family-ftfmOne);
+  font-size: var(--font-size-ftzSmall);
+  letter-spacing: 1px;
+}
+/*acceuille par défaut fin*/
