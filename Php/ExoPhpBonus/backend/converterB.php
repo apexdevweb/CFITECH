@@ -2,7 +2,7 @@
 require("converterBScript.php");
 if (isset($_POST['switcher'])) {
     $legend = "Yen" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
-} else if (!isset($_POST['switcher'])) {
+} else {
     $legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Yen";
 }
 ?>
