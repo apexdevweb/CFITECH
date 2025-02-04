@@ -1,7 +1,10 @@
 <?php
 require("converterBScript.php");
-$legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Yen";
-$legend2 = "Yen" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
+if (isset($_POST['switcher'])) {
+    $legend = "Yen" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
+} else if (!isset($_POST['switcher'])) {
+    $legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Yen";
+}
 ?>
 <fieldset class="converter__field">
     <legend class="converter__legend"><?= $legend ?></legend>
@@ -11,7 +14,7 @@ $legend2 = "Yen" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euro
             <i class='fa-solid fa-arrow-right'></i>
             <input type="submit" value="Convert" name="convert">
         </div>
-        <button class="converter__btnSwitcher"><i class='fa-solid fa-arrow-right'></i><i class='fa-solid fa-arrow-left'></i></button>
+        <button class="converter__btnSwitcher" name="switcher"><i class='fa-solid fa-arrow-right'></i><i class='fa-solid fa-arrow-left'></i></button>
     </form>
     <?php
     if (isset($resultatYen)) {

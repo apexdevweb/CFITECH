@@ -1,7 +1,10 @@
 <?php
 require("converterAScript.php");
-$legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Dollars";
-$legend2 = "Dollars" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
+if (isset($_POST['switcher'])) {
+    $legend = "Dollars" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
+} else if (!isset($_POST['switcher'])) {
+    $legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Dollars"; 
+}
 ?>
 <fieldset class="converter__field">
     <legend class="converter__legend"><?= $legend ?></legend>
