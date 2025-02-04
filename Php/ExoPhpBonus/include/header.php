@@ -17,7 +17,7 @@
                 <li class="secondary__nav--El"><a href="index.php?page=converterC">Euro <i class="fa-solid fa-arrow-right"></i> Pounds</a></li>
                 <li class="secondary__nav--El"><a href="index.php?page=converterD">Euro <i class="fa-solid fa-arrow-right"></i> FrancsRDC</a></li>
                 <li class="secondary__nav--El"><a href="index.php?page=converterE">Euro <i class="fa-solid fa-arrow-right"></i> Dirham</a></li>
-                <li class="secondary__nav--El"><a href="index.php?page=converterF">Euro <i class="fa-solid fa-arrow-right"></i> Dirham</a></li>
+                <li class="secondary__nav--El"><a href="index.php?page=converterF">Euro <i class="fa-solid fa-arrow-right"></i> Bitcoin</a></li>
             </ul>
         </li>
         <ul class="tertiary__nav">

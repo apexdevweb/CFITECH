@@ -39,6 +39,7 @@ class User
         $this->pass = $lePass;
     }
 }
+//on verifie que la method est bien définie sur POST
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $user_id = random_int(1, 10);

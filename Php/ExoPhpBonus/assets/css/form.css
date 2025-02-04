@@ -22,7 +22,6 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
-  background-color: aqua;
   border-radius: 10px;
   background: var(--background-gradient);
 }
@@ -80,7 +79,7 @@
   justify-content: center;
   font-size: var(--font-size-ftzMedium);
   border-radius: 10px;
-  background: transparent;
+  background: #fff;
   border: 1px solid #fff;
 }
 .converter__subcontainer > input[type="number"] {
@@ -93,7 +92,7 @@
 }
 .converter__subcontainer > input[type="submit"] {
   min-height: 3vh;
-  background: transparent;
+  background: #fff;
   border-radius: 10px;
   border: 1px solid #fff;
   color: #000;
@@ -103,10 +102,12 @@
   color: #fff;
   border: 1px solid #000;
   box-shadow: var(--box-shadow-drpShdw);
+  background: #000;
 }
 .converter__btnSwitcher:hover {
   color: #fff;
   border: 1px solid #000;
   box-shadow: var(--box-shadow-drpShdw);
+  background-color: #000;
 }
 /*converter form & fieldset & legend  fin*/

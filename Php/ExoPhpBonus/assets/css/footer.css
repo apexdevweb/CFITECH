@@ -1,0 +1,21 @@
+footer{
+   min-height: 15vh;
+   width: 100%;
+    position: relative;
+    bottom: 0;
+    background: var(--background-gradient);
+    overflow: hidden;
+}
+.foot__wrapper{
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+}
+.foot__tag{
+    font-size: var(--font-size-ftzSmall);
+    font-family: var(--font-family-ftfmTwo);
+}

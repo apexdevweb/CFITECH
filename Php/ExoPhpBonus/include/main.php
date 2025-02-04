@@ -5,7 +5,11 @@
     <section class="section__main">
         <?php
         // Récupérer la page demandée
-        $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+        if (isset($_GET['page'])) {
+            $page = $_GET['page'];
+        } else {
+            $page = 'home';
+        }
         // Charge le bon contenu
         if (isset($_SESSION['authtentification'])) {
             switch ($page) {
@@ -34,5 +38,8 @@
             }
         }
         ?>
+    </section>
 </div>
-</section>
+<hr class="main__hr3">
+<hr class="main__hr2">
+<hr class="main__hr1">

@@ -1,0 +1,24 @@
+<?php
+require("converterFScript.php");
+$legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Bitcoin";
+$legend2 = "Bitcoin" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
+?>
+<fieldset class="converter__field">
+    <legend class="converter__legend"><?= $legend ?></legend>
+    <form method="POST" class="converter__form">
+        <div class="converter__subcontainer">
+            <input type="number" placeholder="Euros" name="eur">
+            <i class='fa-solid fa-arrow-right'></i>
+            <input type="submit" value="Convert" name="convert">
+        </div>
+        <button class="converter__btnSwitcher"><i class='fa-solid fa-arrow-right'></i><i class='fa-solid fa-arrow-left'></i></button>
+    </form>
+    <?php
+    if (isset($resultatCoin)) {
+        //on utilise la fonction "number_format($variable, 2)" avec deux argument pour aafficher le résultat en décimal
+    ?>
+        <h3 class="converter__result"><?= number_format($resultatCoin, 2) . " "; ?>Bitcoin</h3>
+    <?php
+    }
+    ?>
+</fieldset>

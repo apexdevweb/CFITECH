@@ -1,6 +1,8 @@
 <?php
 require("backend/userRegister.php");
 require("backend/converterAScript.php");
+require("backend/converterBScript.php");
+require("backend/converterFScript.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -40,8 +42,8 @@ require("backend/converterAScript.php");
                         }
 
                         // On ajoute la nouvelle conversion uniquement si elle n'existe pas déjà dans la session
-                        if (isset($_SESSION["Eur/dolrs-resultat"])) {
-                            $newConversion = $_SESSION["Eur/dolrs-resultat"];
+                        if (isset($_SESSION["convertResultat"])) {
+                            $newConversion = $_SESSION["convertResultat"];
                             if (!in_array($newConversion, $_SESSION["globaleconvert"])) {
                                 $_SESSION["globaleconvert"][] = $newConversion;
                             }
@@ -49,9 +51,9 @@ require("backend/converterAScript.php");
 
                         // On affiche toutes les conversions dans la session
                         if (!empty($_SESSION["globaleconvert"])) {
-                            foreach ($_SESSION["globaleconvert"] as $conversion) {
+                            foreach ($_SESSION["globaleconvert"] as $conversion) {     
                         ?>
-                                <p><i class="fa-solid fa-arrow-right"></i> Euro/Usd: <?= " " . htmlspecialchars($conversion) . " " ?>USD</p>
+                                    <p><i class="fa-solid fa-arrow-right"></i> Euro/Usd: <?= " " . htmlspecialchars($conversion) . " " ?>USD</p>
                         <?php
                             }
                         } else {
@@ -64,6 +66,10 @@ require("backend/converterAScript.php");
             }
             ?>
         </section>
+        <hr class="main__hr3">
+        <hr class="main__hr2">
+        <hr class="main__hr1">
+       
     </main>
     <footer>
         <?php
