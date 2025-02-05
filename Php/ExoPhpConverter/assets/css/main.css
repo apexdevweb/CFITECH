@@ -1,0 +1,81 @@
+.section__main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url("../image/bitcoinWallpapper.png") no-repeat 90% 50%;
+}
+.main__hr1 {
+  height: 6px;
+  width: 75vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.main__hr2 {
+  height: 6px;
+  width: 50vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.main__hr3 {
+  height: 6px;
+  width: 25vw;
+  border-radius: 10px;
+  background: var(--background-gradient);
+  border: none;
+}
+.wrapper__main {
+  height: auto;
+  width: 100%;
+
+  background: var(--background-gradient);
+}
+.converter__result {
+  font-family: var(--font-family-ftfmTwo);
+  font-size: var(--font-size-ftzMedium);
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: var(--text-shadow-txtShdw);
+}
+/*acceuille par défaut*/
+.default__h5 {
+  color: #fff;
+  font-family: var(--font-family-ftfmOne);
+  font-size: var(--font-size-ftzMedium);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.defautl__p {
+  font-family: var(--font-family-ftfmOne);
+  font-size: var(--font-size-ftzSmall);
+  letter-spacing: 1px;
+  color: #fff;
+}
+.info__txt {
+  text-align: left;
+  max-width: 60ch;
+  font-size: var(--font-size-ftzMedium);
+  font-family: var(--font-family-ftfmOne);
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+.info__txt > span {
+  font-family: var(--font-family-ftfmTwo);
+  text-shadow: var(--text-shadow-txtShdw);
+  font-size: 5rem;
+  color: #fff;
+}
+.info__txt > strong {
+  font-size: var(--font-size-ftzMedium);
+  border-bottom: 3px solid #000;
+  color: #fff;
+}
+/*acceuille par défaut fin*/
