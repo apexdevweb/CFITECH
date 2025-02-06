@@ -20,7 +20,7 @@ if (isset($_POST['switcher'])) {
     if (isset($resultatYen)) {
         //on utilise la fonction "number_format($variable, 2)" avec deux argument pour aafficher le résultat en décimal
     ?>
-        <h3 class="converter__result"><?= number_format($resultatYen, 2) . " "; ?>YEN</h3>
+        <h3 class="converter__result"><?= number_format($resultatYen, 2) . " " . $deviceInfo; ?></h3>
     <?php
     }
     ?>

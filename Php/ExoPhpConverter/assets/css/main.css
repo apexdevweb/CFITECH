@@ -35,7 +35,7 @@
 .wrapper__main {
   height: auto;
   width: 100%;
- 
+
   background: var(--background-gradient);
 }
 .converter__result {
@@ -58,6 +58,24 @@
   font-size: var(--font-size-ftzSmall);
   letter-spacing: 1px;
   color: #fff;
-  
+}
+.info__txt {
+  text-align: left;
+  max-width: 60ch;
+  font-size: var(--font-size-ftzMedium);
+  font-family: var(--font-family-ftfmOne);
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+.info__txt > span {
+  font-family: var(--font-family-ftfmTwo);
+  text-shadow: var(--text-shadow-txtShdw);
+  font-size: 5rem;
+  color: #fff;
+}
+.info__txt > strong {
+  font-size: var(--font-size-ftzMedium);
+  border-bottom: 3px solid #000;
+  color: #fff;
 }
 /*acceuille par défaut fin*/

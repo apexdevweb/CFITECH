@@ -3,7 +3,7 @@ require("converterAScript.php");
 if (isset($_POST['switcher'])) {
     $legend = "Dollars" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Euros";
 } else {
-    $legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Dollars"; 
+    $legend = "Euros" . " " . "<i class='fa-solid fa-arrow-right'></i>" . " " . "Dollars";
 }
 ?>
 <fieldset class="converter__field">
@@ -20,7 +20,7 @@ if (isset($_POST['switcher'])) {
     if (isset($resultatUSD)) {
         //on utilise la fonction "number_format($variable, 2)" avec deux argument pour aafficher le résultat en décimal
     ?>
-        <h3 class="converter__result"><?= number_format($resultatUSD, 2) . " "; ?>USD</h3>
+        <h3 class="converter__result"><?= number_format($resultatUSD, 2) . " " . $deviceInfo; ?></h3>
     <?php
     }
     ?>

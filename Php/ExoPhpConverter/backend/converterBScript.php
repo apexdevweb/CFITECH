@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST["convert"])) {
     if (!empty($_POST["eur"])) {
+        $deviceInfo = "Yen";
         $euro = htmlspecialchars($_POST["eur"]);
         //on récupère le taux de convertion de la devise en question
         $convertion_taux = 160.53;
@@ -8,5 +9,6 @@ if (isset($_POST["convert"])) {
         $resultatYen = $euro * $convertion_taux;
         //on sauvegarde le résultat dans une superglobale $_SESSION[] pour pouvoir afficher le résultat ou l'on veux
         $_SESSION["convertResultat"] = $resultatYen;
+        $_SESSION["infoDevice"] = $deviceInfo;
     }
 }

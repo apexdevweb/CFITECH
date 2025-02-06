@@ -2,6 +2,9 @@
 require("backend/userRegister.php");
 require("backend/converterAScript.php");
 require("backend/converterBScript.php");
+require("backend/converterCScript.php");
+require("backend/converterDScript.php");
+require("backend/converterEScript.php");
 require("backend/converterFScript.php");
 ?>
 <!DOCTYPE html>
@@ -42,18 +45,22 @@ require("backend/converterFScript.php");
                         }
 
                         // On ajoute la nouvelle conversion uniquement si elle n'existe pas déjà dans la session
-                        if (isset($_SESSION["convertResultat"])) {
+                        if (isset($_SESSION["convertResultat"]) && isset($_SESSION["infoDevice"])) {
+                            //on place la super globale "SESSION" dans des variables, 
+                            //une pour le résultat --> $newConversion et une pour voir le type de devise converti --> $newInfo
                             $newConversion = $_SESSION["convertResultat"];
-                            if (!in_array($newConversion, $_SESSION["globaleconvert"])) {
-                                $_SESSION["globaleconvert"][] = $newConversion;
+                            $newInfo = $_SESSION["infoDevice"];
+
+                            if (!in_array($newConversion, $_SESSION["globaleconvert"]) && !in_array($newInfo, $_SESSION["globaleconvert"])) {
+                                $_SESSION["globaleconvert"][] = $newConversion . " " . $newInfo;
                             }
                         }
 
                         // On affiche toutes les conversions dans la session
                         if (!empty($_SESSION["globaleconvert"])) {
-                            foreach ($_SESSION["globaleconvert"] as $conversion) {     
+                            foreach ($_SESSION["globaleconvert"] as $conversion) {
                         ?>
-                                    <p><i class="fa-solid fa-arrow-right"></i> Euro/Usd: <?= " " . htmlspecialchars($conversion) . " " ?>USD</p>
+                                <p><i class="fa-solid fa-arrow-right"></i><?= " " . htmlspecialchars($conversion) . " " ?><i class="fa-solid fa-chart-line"></i></p>
                         <?php
                             }
                         } else {
@@ -68,7 +75,7 @@ require("backend/converterFScript.php");
         </section>
         <hr class="main__hr3">
         <hr class="main__hr2">
-        <hr class="main__hr1"> 
+        <hr class="main__hr1">
     </main>
     <footer>
         <?php

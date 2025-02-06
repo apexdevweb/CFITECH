@@ -32,10 +32,12 @@
                     include 'backend/converterF.php';
                     break;
                 default:
-                    echo "<h5 class='default__h5'>" . "Bienvenue sur Easy converter ici vous pouvez choisir une devise à convertir" . "</h5>";
+                    echo "<h5 class='default__h5'>" . "Ici vous pouvez choisir une devise à convertir" . "</h5>";
                     echo "<p class='defautl__p '>" . "Veuillez sélectionner une conversion." . "</p>";
                     break;
             }
+        } else {
+            echo "<p class='info__txt'>" . "<span>B</span>ienvenue sur <strong>Easy Converter</strong> qui a été développé en PHP afin de faciliter les conversions en seulement quelques clics, et automatiquement enregistrer vos conversions sur votre profil, <strong>veuillez vous connecter</strong> pour pouvoir en faire usage." . "</p>";
         }
         ?>
     </section>
