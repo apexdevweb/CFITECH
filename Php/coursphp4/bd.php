@@ -17,13 +17,13 @@
     // var_dump($resultat->fetchAll(PDO::FETCH_OBJ));
 
     //On essaye de se connecter a la base de données
-    // try{
-    //     $pdo = new PDO('mysql:dbname=coursmysql4;host=localhost', "james","ok"); 
-    //     //On définit le mode d'erreur de PDO sur Exception
-    //     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //     echo 'Connexion réussie';
-    // }catch (PDOException $e){
-    //     die('Erreur : '. $e->getMessage());
-    // }
+    try{
+        $pdo = new PDO('mysql:dbname=coursmysql4;host=localhost', "james","ok"); 
+        //On définit le mode d'erreur de PDO sur Exception
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo 'Connexion réussie';
+    }catch (PDOException $e){
+        die('Erreur : '. $e->getMessage());
+    }
 
 ?>
