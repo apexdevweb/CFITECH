@@ -181,7 +181,7 @@ body {
     background-color: #888;
     .nav__ul {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         align-items: flex-start;
         justify-content: space-evenly;
       }
