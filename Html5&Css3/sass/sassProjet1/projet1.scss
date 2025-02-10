@@ -1,0 +1,189 @@
+// /*
+//   Voici quelques brefs exercices pour vous donner de l'experience supplementaire en SCSS, et plus particulierement en refactorant du CSS classique en SCSS.
+
+//   Vous pouvez verifier votre SCSS en le placant dans Sassmeister, et voir si le CSS compil  correspond au code de depart :
+//   http://www.sassmeister.com/
+
+//   La documentation Sass est une excellente ressource et peut etre trouvee ici : http://sass-lang.com/documentation/
+// */
+
+// /*
+//   *Exemple - ecrire le code CSS suivant en utilisant des regles imbriquees:
+// */
+// a {
+//     text-decoration: none;
+//   }
+
+//   a::hover {
+//     text-decoration: underline;
+//   }
+
+//   /*
+//    Solution:
+//   */
+//   a {
+//     text-decoration: none;
+//     &::hover {
+//       text-decoration: underline;
+//     }
+//   }
+
+//   /*
+//    A votre tour!
+//     *Ecrire le code CSS suivant en utilisant un mixin SCSS:
+//   */
+//   //exo1
+//   @mixin border-radiusA($property, $val) {
+//     -webkit-#{$property}: $val;
+//     -moz-#{$property}: $val;
+//     -ms-#{$property}: $val;
+//     #{$property}: $val;
+//   }
+//   @mixin border-radiusB($propertyB, $valB) {
+//     -webkit-#{$propertyB}: $valB;
+//     -moz-#{$propertyB}: $valB;
+//     -ms-#{$propertyB}: $valB;
+//     #{$propertyB}: $valB;
+//   }
+//   .box-square {
+//     @include border-radiusA(border-radius, 0);
+//   }
+//   .box-rounded {
+//     @include border-radiusB(border-radius, 10px);
+//   }
+//   //mixin break point : exemple
+//   @mixin breakpoint($point) {
+//     @if $point == medium {
+//       @media (min-width: 900px) {
+//         @content;
+//       }
+//     } @else if $point == large {
+//        @media (min-width: 1200px) {
+//          @content;
+//       }
+//     }
+//   }
+//   //mixin break point fin
+//   //exo2 fin
+//   /*
+//     *Ecrire les regles suivantes en utilisant la syntaxe d'imbrication de SCSS:
+//   */
+//   //exo2
+//   nav {
+//     & ul {
+//       margin: 0;
+//       padding: 0;
+//       list-style: none;
+//     }
+//     & li {
+//       display: inline-block;
+//     }
+//     & a {
+//       display: block;
+//       padding: 6px 12px;
+//       text-decoration: none;
+//     }
+//   }
+//   //exo2 fin
+//   /*
+//     *Ecrire le code CSS suivant en utilisant le mot-cle @extends de SCSS:
+//   */
+//   .success {
+//     border: 1px solid #ccc;
+//     padding: 10px;
+//     color: #333;
+//     border-color: green;
+//   }
+
+//   .error {
+//     @extend.success;
+//     border-color: red;
+//   }
+
+//   .warning {
+//     @extend.success;
+//     border-color: yellow;
+//   }
+
+//   /*
+//    *Écrivez le CSS suivant en utilisant une directive SCSS "each" et une "map" (similaire à un objet en JS)
+//    */
+
+//   h1 {
+//     color: darkorange;
+//   }
+
+//   h2 {
+//     color: royalblue;
+//   }
+
+//   h3 {
+//     color: springgreen;
+//   }
+
+//   /*
+//    *Écrire le CSS suivant en utilisant le mot-cle @extends de SCSS et des variables représentant les valeurs de couleurs:
+//   */
+//   a.twitter {
+//     min-width: 100px;
+//     padding: 1em;
+//     border-radius: 1em;
+//     background: #55acee;
+//     color: #fff;
+//   }
+
+//   span.facebook {
+//     min-width: 100px;
+//     padding: 1em;
+//     border-radius: 1em;
+//     background: #3b5998;
+//     color: #fff;
+//   }
+
+//mixins
+@mixin breakpoint($point) {
+  @if $point == medium {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $point == large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+//mixins fin
+body {
+  & header {
+    height: auto;
+    width: 100%;
+    & .header__nav {
+      height: auto;
+      width: 100%;
+       & .nav__ul {
+        height: auto;
+        width: 100%;
+       }
+      }
+    }
+
+  @include breakpoint(medium) {
+    background-color: red;
+    .nav__ul {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+  }
+  @include breakpoint(large) {
+    background-color: #888;
+    .nav__ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+      }
+  }
+}

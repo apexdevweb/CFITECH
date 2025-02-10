@@ -1,0 +1,36 @@
+body header {
+  height: auto;
+  width: 100%;
+}
+body header .header__nav {
+  height: auto;
+  width: 100%;
+}
+body header .header__nav .nav__ul {
+  height: auto;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+  body .nav__ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #888;
+  }
+  body .nav__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+
+/*# sourceMappingURL=projet1.css.map */
