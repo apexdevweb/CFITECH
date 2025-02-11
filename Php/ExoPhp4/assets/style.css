@@ -49,17 +49,17 @@ header {
   border-radius: 15px;
 }
 /*grid*/
-.user_containerA{
-    height: auto;
-    width: 50vw;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-    color: #fff;
+.user_containerA {
+  height: auto;
+  width: 50vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
 }
-.user_containerB{
+.user_containerB {
   height: auto;
   width: 50vw;
   display: flex;
@@ -83,79 +83,73 @@ header {
 
 .a {
   /* grid-area: a; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .b {
   /* grid-area: b; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .c {
   /* grid-area: c; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .d {
   /* grid-area: d; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .e {
   /* grid-area: e; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
 }
 
 .h {
   /* grid-area: h; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .i {
   /* grid-area: i; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
-
 }
 
 .j {
   /* grid-area: j; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
 }
 
 .k {
   /* grid-area: k; */
-  height:7vh;
-  width:7vw;
+  height: 7vh;
+  width: 7vw;
   border: 1px solid #fff;
 }
-form{
-    height: 50vh;
-    width: 50vw;
-    margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #999;
+form {
+  height: 50vh;
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #999;
 }

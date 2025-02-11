@@ -18,9 +18,13 @@ if (isset($_POST["validate"])) {
     if ($req_verif->rowCount() > 0) {
         echo "<h2>"."L'utilisateur existe déjà !"."</h2>";
     } else {
+      try{
        $req_insert = $bdd->prepare("INSERT INTO `users`(`firstname`, `lastname`, `gender`, `date_of_birth`, `city`, `weight_kg`) VALUES (?,?,?,?,?,?)");
        $req_insert->execute(array($user_fname,$user_lname,$user_genre,$user_birthday,$user_location,$user_weight));
+      }catch (PDOException $e){
+        die("Erreur : " . $e->getMessage());
     }
+      }
   }
 
 } else {

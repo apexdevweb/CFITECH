@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+/*info text*/
+
+.info{
+  padding: 5px;
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: steelblue;
+}
