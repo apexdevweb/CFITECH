@@ -1,3 +1,6 @@
+<?php
+require("backend/connexionDB.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,6 +13,7 @@
 <body>
     <header>
         <?php
+        $sub_title = "Home";
         require("include/header.php");
         ?>
     </header>
