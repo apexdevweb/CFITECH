@@ -1,0 +1,11 @@
+@import "variables.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
