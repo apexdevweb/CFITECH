@@ -16,6 +16,7 @@ if (isset($_POST["insertValidate"])) {
         $date_birth = htmlspecialchars($_POST["date_naissance"]);
         $user_pass = htmlspecialchars(strip_tags($_POST["userpass"]));
         $user_confirm_pass = htmlspecialchars(strip_tags($_POST["userverifpass"]));
+        $user_city =  htmlspecialchars($_POST["city"]);
 
         //je fais une conditions pour vérifier l'email 
         if ($user_email !== false) {

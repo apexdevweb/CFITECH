@@ -8,10 +8,10 @@
     }
     switch ($page) {
         case 'index':
-
+            include("components/home.php");
             break;
         case 'profil':
-
+            include("components/profil.php");
             break;
         case 'signup':
             include("components/signupForm.php");

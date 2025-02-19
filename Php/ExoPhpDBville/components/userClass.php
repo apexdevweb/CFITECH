@@ -46,3 +46,4 @@ class Utilisateur extends City
         return $this->birthDate;
     }
 }
+$user = new Utilisateur($firstName, $lastName, $email, $birthDate, $cityName, $cityCountry, $isCapital);
