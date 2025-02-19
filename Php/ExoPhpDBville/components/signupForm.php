@@ -1,3 +1,6 @@
+<?php
+require("backend/sqlRequests/insertUser.php");
+?>
 <fieldset>
     <legend>Inscription</legend>
     <form method="POST">
@@ -7,6 +10,7 @@
         <label for="date_naissance">Date de naissance</label>
         <input type="date" name="date_naissance" required>
         <select name="city" required>
+            <option selected>Votre villes</option>
             <option value="Bruxelles">Bruxelles</option>
             <option value="Paris">Paris</option>
             <option value="Berlin">Berlin</option>
@@ -20,6 +24,6 @@
         </select>
         <input type="password" placeholder="Mot de passe" name="userpass" required>
         <input type="password" placeholder="Confirmer mot de passe" name="userverifpass" required>
-        <input type="submit" value="Signup">
+        <input type="submit" name="insertValidate" value="Signup">
     </form>
 </fieldset>

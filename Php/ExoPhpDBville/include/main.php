@@ -4,9 +4,15 @@
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
     } else {
-        $page = 'index.php';
+        $page = 'index';
     }
     switch ($page) {
+        case 'index':
+
+            break;
+        case 'profil':
+
+            break;
         case 'signup':
             include("components/signupForm.php");
             break;

@@ -1,0 +1,69 @@
+/*Paramétrage design concernant le header →(header,titre principale,sous-titre et navbarre + animation)*/
+header,
+.header__nav,
+.nav__list,
+.nav__list--items {
+  height: auto;
+  width: 100%;
+}
+.header__title {
+  margin: 0;
+  font-size: var(--font-size-ftszBig);
+  font-family: var(--font-family-ftfmlOne);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: AnimeTitle 1.5s ease normal forwards;
+}
+.header__subtitle {
+  font-size: var(--font-size-ftszMedium);
+  font-family: var(--font-family-ftfmlTwo);
+}
+.header__nav,
+.nav__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.nav__list {
+  padding: 0;
+}
+.nav__list--items {
+  letter-spacing: 2px;
+  margin-left: 5px;
+  list-style-type: none;
+}
+.nav__list--items > a {
+  text-decoration: none;
+  font-family: var(--font-family-ftfmlTwo);
+  color: #000;
+}
+.nav__list--items > a:hover {
+  transition: 0.3s ease;
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+.list__item--span {
+  text-shadow: var(--text-shadow-txtShdw);
+  color: #fff;
+  font-size: var(--font-size-ftszMedium);
+  font-family: var(--font-family-ftfmlOne);
+}
+/*petite animation du titre principale donc pour expliquer:↓
+on démarre l'animation avec des valeurs vides l'opacité et la largeurs de l'éléments à 0 et le script arrive a 100% ("to")
+ et génére une largeur à 100% avec une opacité a l'échelle de 1 donc 100% opac avec la bordure de couleurs noir qui vient s'ajouter
+ et plus haut dans l'élément concerné on peut retrouver les paramètre d'animation... en l'occurence le delay, la durée , et l'itération*/
+
+@keyframes AnimeTitle {
+  from {
+    opacity: 0;
+    width: 0;
+    border-bottom: 0px solid transparent;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+    border-bottom: 5px solid black;
+  }
+}

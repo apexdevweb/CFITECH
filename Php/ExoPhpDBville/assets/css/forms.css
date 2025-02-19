@@ -1,0 +1,16 @@
+fieldset {
+  min-height: 36vh;
+  width: auto;
+}
+legend {
+  text-align: center;
+  letter-spacing: 3px;
+}
+form {
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}

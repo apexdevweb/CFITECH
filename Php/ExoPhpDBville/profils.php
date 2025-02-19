@@ -27,6 +27,9 @@ require("backend/connexionDB.php");
         require("include/footer.php");
         ?>
     </footer>
+    <?php
+    require("assets/js/mobilemenu.js");
+    ?>
 </body>
 
 </html>

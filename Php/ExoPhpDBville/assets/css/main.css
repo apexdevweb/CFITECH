@@ -1,0 +1,6 @@
+/*Paramétrage design du fichier main qui concerne la section principale(Globale)*/
+.global__content {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #888;
+}

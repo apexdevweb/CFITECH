@@ -10,7 +10,7 @@ class Connectdb
     private $username = "root";
     private $password = "";
     private $connexion;
-    //on défini un constructor avec un try à l'intérieur pour pouvoir géré les erreur de connexion
+    //on défini un constructor avec un try à l'intérieur pour pouvoir géré les erreurs de connexion
     public function __construct()
     {
         try {
