@@ -1,5 +1,5 @@
 <?php
-require("backend/connexionDB.php");
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,18 +18,17 @@ require("backend/connexionDB.php");
         ?>
     </header>
     <main>
-        <?php
-        require("include/main.php");
-        ?>
+        <section class="global__content">
+
+
+        </section>
     </main>
     <footer>
         <?php
         require("include/footer.php");
         ?>
     </footer>
-    <?php
-    require("assets/js/mobilemenu.js");
-    ?>
+    <script src="assets/js/mobilemenu.js"></script>
 </body>
 
 </html>

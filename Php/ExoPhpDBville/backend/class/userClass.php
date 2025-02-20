@@ -14,10 +14,8 @@ class Utilisateur extends City
         string $email,
         DateTime $birthDate,
         string $cityName,
-        string $cityCountry,
-        bool $isCapital
     ) {
-        parent::__construct($cityName, $cityCountry, $isCapital);
+        parent::__construct($cityName);
 
         $this->firstName = $firstName;
         $this->lastName = $lastName;
@@ -46,4 +44,3 @@ class Utilisateur extends City
         return $this->birthDate;
     }
 }
-$user = new Utilisateur($firstName, $lastName, $email, $birthDate, $cityName, $cityCountry, $isCapital);

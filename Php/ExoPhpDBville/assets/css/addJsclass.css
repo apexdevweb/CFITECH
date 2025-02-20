@@ -1,0 +1,38 @@
+/*mobile menu*/
+.barrets__container {
+  position: absolute;
+  top: 12%;
+  left: 70%;
+  height: 4vh;
+  width: 15vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.barrets__container:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 5px #000);
+}
+.barre {
+  height: 5px;
+  width: 12vw;
+  background-color: #000;
+  border-radius: 10px;
+}
+.open__barre:nth-child(1) {
+  transform: rotate(45deg) translateX(15px);
+  transition: 0.3s ease;
+}
+.open__barre:nth-child(2) {
+  visibility: hidden;
+}
+.open__barre:nth-child(3) {
+  transform: rotate(-45deg) translateX(15px);
+  transition: 0.3s ease;
+}
+
+.listview {
+  display: flex;
+}

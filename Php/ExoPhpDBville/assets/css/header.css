@@ -5,19 +5,25 @@ header,
 .nav__list--items {
   height: auto;
   width: 100%;
+  background-color: red;
+}
+header {
+  overflow: hidden;
 }
 .header__title {
   margin: 0;
   font-size: var(--font-size-ftszBig);
   font-family: var(--font-family-ftfmlOne);
   display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
   animation: AnimeTitle 1.5s ease normal forwards;
 }
 .header__subtitle {
   font-size: var(--font-size-ftszMedium);
   font-family: var(--font-family-ftfmlTwo);
+}
+cite {
+  font-family: var(--font-family-ftfmlOne);
 }
 .header__nav,
 .nav__list {
@@ -27,6 +33,7 @@ header,
   justify-content: space-around;
 }
 .nav__list {
+  display: none;
   padding: 0;
 }
 .nav__list--items {
@@ -38,6 +45,7 @@ header,
   text-decoration: none;
   font-family: var(--font-family-ftfmlTwo);
   color: #000;
+  text-shadow: var(--text-shadow-txtShdw);
 }
 .nav__list--items > a:hover {
   transition: 0.3s ease;
@@ -46,7 +54,7 @@ header,
 }
 .list__item--span {
   text-shadow: var(--text-shadow-txtShdw);
-  color: #fff;
+  color: #000;
   font-size: var(--font-size-ftszMedium);
   font-family: var(--font-family-ftfmlOne);
 }
