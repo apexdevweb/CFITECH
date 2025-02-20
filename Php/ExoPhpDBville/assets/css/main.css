@@ -1,6 +1,31 @@
 /*Paramétrage design du fichier main qui concerne la section principale(Globale)*/
 .global__content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   min-height: 50vh;
   width: 100%;
-  background-color: #888;
+  background: url("../image/citybuilding.png") no-repeat 50% 50%;
+  background-size: contain;
+  filter: drop-shadow(0px 0px 3px #000);
+}
+.global__intro {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-family-ftfmlTwo);
+  font-size: var(--font-size-ftszBig);
+  width: 6ch;
+}
+.global__intro > span {
+  font-size: var(--font-size-ftszBig);
+  font-family: var(--font-family-ftfmlOne);
+}
+.global__intro > strong {
+  font-family: var(--font-family-ftfmlOne);
+  text-decoration: underline;
 }

@@ -4,7 +4,13 @@
     <?php
     if (isset($_SESSION["auth"])) {
     ?>
-        <cite>Bonjour: <?= $_SESSION["data"]["USR_pseudo"] ?></cite>
+        <div class="header__user--pannel">
+            <ul class="user__pannel--list">
+                <li class="user__pannel--item"><cite>Bonjour: <span><?= $_SESSION["data"]["USR_pseudo"] ?></span></cite></li>
+                <hr class="user__pannel--separator">
+                <li class="user__pannel--item"><i class="fa-regular fa-user"></i> <a href="../personalProfil.php">My profil</a></li>
+            </ul>
+        </div>
     <?php
     }
     ?>

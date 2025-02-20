@@ -10,6 +10,7 @@
   border-radius: 10px;
   overflow: hidden;
   font-family: var(--font-family-ftfmlTwo);
+  background-color: rgba(0, 0, 0, 0.755);
 }
 .profil__title--container {
   text-align: center;
@@ -21,15 +22,30 @@
   letter-spacing: 2px;
 }
 .profil__subcontainer {
+  height: auto;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  color: #fff;
 }
 .profil__subtitle--container {
+  padding: 3px;
+  height: auto;
+  min-width: 30vw;
+  max-width: 50vw;
+  font-size: var(--font-size-ftszSmall);
+  text-align: center;
 }
 .profil__fig {
+  margin: 0;
+  padding: 3px;
+  height: auto;
+  min-width: 35vw;
+  max-width: 50vw;
 }
+
 .profil__fig > img {
   max-height: 20vh;
   max-width: 20vw;

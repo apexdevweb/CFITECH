@@ -3,7 +3,10 @@ footer {
   bottom: 0;
   min-height: 10vh;
   width: 100%;
-  background-color: #999;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #000;
 }
 .footer__signature {
   height: auto;
@@ -12,6 +15,7 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 .footer__signature > small {
   font-family: var(--font-family-ftfmlTwo);

@@ -19,8 +19,7 @@ session_start();
     </header>
     <main>
         <section class="global__content">
-
-
+            <p class="global__intro"><span>W</span>elcome to the <strong>Profils</strong> & <strong>City</strong></p>
         </section>
     </main>
     <footer>

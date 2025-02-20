@@ -5,7 +5,6 @@ header,
 .nav__list--items {
   height: auto;
   width: 100%;
-  background-color: red;
 }
 header {
   overflow: hidden;
@@ -22,8 +21,51 @@ header {
   font-size: var(--font-size-ftszMedium);
   font-family: var(--font-family-ftfmlTwo);
 }
+.header__user--pannel {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: auto;
+  width: auto;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #000;
+  color: #fff;
+}
+.user__pannel--list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 3px;
+}
+.user__pannel--item {
+  list-style-type: none;
+}
+.user__pannel--item > a {
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-family-ftfmlTwo);
+}
+.user__pannel--item > a:hover {
+  text-decoration: underline;
+}
+.user__pannel--separator {
+  height: 2px;
+  min-width: 15vw;
+  max-width: 25vw;
+  background-color: #fff;
+  border: none;
+}
 cite {
+  font-size: var(--font-size-ftszSmall);
   font-family: var(--font-family-ftfmlOne);
+}
+cite > span {
+  font-family: var(--font-family-ftfmlTwo);
 }
 .header__nav,
 .nav__list {
