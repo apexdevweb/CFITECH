@@ -1,2 +1,62 @@
 @media (min-width: 1440px) {
+  /*Mobile menu*/
+  .barrets__container {
+    left: 85%;
+    max-width: 4.2vw;
+  }
+  .barre {
+    height: 5px;
+    width: 4vw;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  /*Mobile menu fin*/
+  /*nav*/
+  .nav__list {
+    flex-flow: row nowrap;
+  }
+  .nav__list--items {
+    text-align: center;
+  }
+  /*nav fin*/
+  /* user pannel */
+  .header__user--pannel {
+    height: 12vh;
+    width: 25vw;
+    letter-spacing: 1px;
+  }
+  /* user pannel fin*/
+  /*section global content*/
+  .global__content {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /*section global content fin*/
+  /*carte de profils*/
+  .profil__card--main {
+    max-width: 25vw;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .profil__subcontainer {
+    margin: 0;
+    width: 25vw;
+    flex-flow: column nowrap;
+  }
+  .profil__subtitle--container {
+    margin: 0;
+  }
+  .profil__fig {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  /*carte de profils fin*/
 }

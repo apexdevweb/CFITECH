@@ -33,6 +33,9 @@ if (isset($_POST["insertValidate"])) {
                     //si l'utilisateur n'est pas déjà enregistrer alors j'enregistre le nouvel utilisateur avec un INSERT INTO
                     $req_insert_user = $bdd->prepare("INSERT INTO users (user_first_name, user_last_name, user_mail, user_pass, date_of_birth, user_city) VALUES (?,?,?,?,?,?)");
                     $req_insert_user->execute([$user_first_name, $user_last_name, $user_email, $user_crypted_pass, $date_birth, $user_city]);
+
+                    header("Location: login.php");
+                    exit();
                 }
             } else {
                 echo "<p>" . "Les mots de pass ne correspondent pas" . "</p>";

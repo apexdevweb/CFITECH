@@ -5,7 +5,7 @@
   }
   .barre {
     height: 5px;
-    width: 7vw;
+    width: 5vw;
     background-color: #000;
     border-radius: 10px;
   }
@@ -34,13 +34,17 @@
   /*section global content fin*/
   /*carte de profils*/
   .profil__card--main {
-    width: 45vw;
+    min-width: 35vw;
+    max-width: 40vw;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
   .profil__subcontainer {
     margin: 0;
     width: 25vw;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
   .profil__subtitle--container {
@@ -49,10 +53,12 @@
   .profil__fig {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: auto;
-    width: 45vw;
+    width: 100%;
   }
   /*carte de profils fin*/
 }

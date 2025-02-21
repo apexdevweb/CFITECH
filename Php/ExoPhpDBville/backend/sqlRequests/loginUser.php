@@ -24,7 +24,7 @@ if (isset($_POST["userLog"])) {
                         $logInfo["user_last_name"],
                         $logInfo["user_mail"],
                         new DateTime($logInfo["date_of_birth"]),
-                        $logInfo["user_city"]
+                        $logInfo["user_city"],
                     );
 
 

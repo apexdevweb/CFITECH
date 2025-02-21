@@ -16,7 +16,6 @@ class Utilisateur extends City
         string $cityName,
     ) {
         parent::__construct($cityName);
-
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->email = $email;
