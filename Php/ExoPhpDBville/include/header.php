@@ -14,7 +14,6 @@
     <?php
     }
     ?>
-
     <ul class="nav__list">
         <li class="nav__list--items"><a href="../index.php"><span class="list__item--span">H</span>ome</a></li>
         <?php

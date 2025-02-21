@@ -6,6 +6,8 @@
 @import "forms.css";
 @import "profilCard.css";
 @import "addJsclass.css";
+@import "desktop/laptop.css";
+@import "desktop/desktop.css";
 
 /*paramétrage du style globale, j'ai importer les autres feuilles de style dans le fichier css principale 
 que j'ai fragmenter pour pouvoir mieux s'y retrouver en y ajoutant 2 typographie que j'ai importer de google font*/

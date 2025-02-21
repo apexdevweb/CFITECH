@@ -23,6 +23,9 @@ require("backend/sqlRequests/recupProfils.php");
         <section class="global__content">
             <?php
             foreach ($req_view_profils as $profilInfo) {
+                $date = new DateTime();
+                $date_naiss2 = new DateTime($profilInfo["date_of_birth"]);
+                $age2 = $date_naiss2->diff($date)->y;
             ?>
                 <article class="profil__card--main">
                     <hgroup class="profil__title--container">
@@ -33,6 +36,7 @@ require("backend/sqlRequests/recupProfils.php");
                         <blockquote class="profil__subtitle--container">
                             <p><?= $profilInfo["user_city"] ?></p>
                             <cite><?= $profilInfo["date_of_birth"] ?></cite>
+                            <cite><?= $age2 ?>ans</cite>
                         </blockquote>
                         <figure class="profil__fig">
                             <img src="../assets/image/avatar.png" alt="myAvatar">

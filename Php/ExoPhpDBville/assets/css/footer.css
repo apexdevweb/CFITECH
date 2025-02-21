@@ -21,6 +21,7 @@ footer {
   font-family: var(--font-family-ftfmlTwo);
 }
 .footer__signature--txt {
+  font-size: var(--font-size-ftszSmall);
   font-family: var(--font-family-ftfmlTwo);
 }
 .footer__txt--span {

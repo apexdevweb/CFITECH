@@ -16,17 +16,28 @@ header {
   display: inline-block;
   white-space: nowrap;
   animation: AnimeTitle 1.5s ease normal forwards;
+  background: url("../image/wallpapper2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  mix-blend-mode: overlay;
 }
 .header__subtitle {
   font-size: var(--font-size-ftszMedium);
   font-family: var(--font-family-ftfmlTwo);
 }
 .header__user--pannel {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
   margin-left: 5px;
   margin-bottom: 5px;
   height: auto;
   width: auto;
-  background-color: #000;
+  background: url("../image/wallpapper2.jpg") no-repeat 50% 50%;
+  background-size: cover;
   border-radius: 10px;
   border: 2px solid #fff;
   box-shadow: 0px 0px 5px #000;
@@ -98,7 +109,7 @@ cite > span {
   text-shadow: var(--text-shadow-txtShdw);
   color: #000;
   font-size: var(--font-size-ftszMedium);
-  font-family: var(--font-family-ftfmlOne);
+  font-family: var(--font-family-ftfmlTwo);
 }
 /*petite animation du titre principale donc pour expliquer:↓
 on démarre l'animation avec des valeurs vides l'opacité et la largeurs de l'éléments à 0 et le script arrive a 100% ("to")
@@ -109,11 +120,11 @@ on démarre l'animation avec des valeurs vides l'opacité et la largeurs de l'é
   from {
     opacity: 0;
     width: 0;
-    border-bottom: 0px solid transparent;
+    border-bottom: 5px solid #000;
   }
   to {
     opacity: 1;
     width: 100%;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #000;
   }
 }

@@ -3,6 +3,7 @@ session_start();
 require("backend/connexionDB.php");
 require("backend/class/userClass.php");
 require("components/nationality.php");
+include("components/age.php");
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,6 +34,7 @@ require("components/nationality.php");
                         <p>Nationalité: <?= $nationality ?></p>
                         <p><?= $_SESSION["data"]["USR_city"] ?></p>
                         <cite><?= $_SESSION["data"]["USR_dtofbrth"] ?></cite>
+                        <cite><?= $age ?>ans</cite>
                     </blockquote>
                     <figure class="profil__fig">
                         <img src="../assets/image/avatar.png" alt="myAvatar">
