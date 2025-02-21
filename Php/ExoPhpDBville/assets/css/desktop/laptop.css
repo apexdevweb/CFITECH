@@ -34,8 +34,7 @@
   /*section global content fin*/
   /*carte de profils*/
   .profil__card--main {
-    min-width: 35vw;
-    max-width: 40vw;
+    width: 33vw;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;

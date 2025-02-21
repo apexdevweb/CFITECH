@@ -1,6 +1,5 @@
 .profil__card--main {
   max-height: 50vh;
-  min-width: 25vw;
   max-width: 100%;
   display: flex;
   flex-flow: column nowrap;

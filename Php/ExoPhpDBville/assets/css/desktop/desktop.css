@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   /*Mobile menu*/
   .barrets__container {
     left: 85%;
@@ -35,7 +35,7 @@
   /*section global content fin*/
   /*carte de profils*/
   .profil__card--main {
-    max-width: 25vw;
+    width: 20vw;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
