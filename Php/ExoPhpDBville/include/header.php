@@ -1,5 +1,5 @@
+<h1 class="header__title">Profils & City</h1>
 <nav class="header__nav">
-    <h1 class="header__title">Profils & City</h1>
     <h2 class="header__subtitle"><?= $sub_title ?></h2>
     <?php
     if (isset($_SESSION["auth"])) {

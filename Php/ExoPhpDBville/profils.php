@@ -48,6 +48,9 @@ require("backend/sqlRequests/recupProfils.php");
             }
             ?>
         </section>
+        <?php
+        require("include/bottomPapper.php");
+        ?>
     </main>
     <footer>
         <?php

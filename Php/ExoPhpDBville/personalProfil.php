@@ -43,6 +43,9 @@ include("components/age.php");
                 </div>
             </article>
         </section>
+        <?php
+        require("include/bottomPapper.php");
+        ?>
     </main>
     <footer>
         <?php

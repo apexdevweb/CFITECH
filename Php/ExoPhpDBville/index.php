@@ -21,6 +21,9 @@ session_start();
         <section class="global__content">
             <p class="global__intro"><span>W</span>elcome to the <strong>Profils</strong> & <strong>City</strong></p>
         </section>
+        <?php
+        require("include/bottomPapper.php");
+        ?>
     </main>
     <footer>
         <?php

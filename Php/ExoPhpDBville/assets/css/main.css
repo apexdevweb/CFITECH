@@ -1,4 +1,7 @@
 /*Paramétrage design du fichier main qui concerne la section principale(Globale)*/
+main {
+  overflow: hidden;
+}
 .global__content {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -28,4 +31,12 @@
 .global__intro > strong {
   font-family: var(--font-family-ftfmlOne);
   text-decoration: underline;
+}
+.bottom__papper--container {
+  height: 50vh;
+  width: 100%;
+  border-radius: 10px;
+  background: url("../image/Wallpaper.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 3px #000);
 }

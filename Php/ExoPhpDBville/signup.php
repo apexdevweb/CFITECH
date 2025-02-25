@@ -46,6 +46,9 @@ require("backend/sqlRequests/insertUser.php");
                 </form>
             </fieldset>
         </section>
+        <?php
+        require("include/bottomPapper.php");
+        ?>
     </main>
     <footer>
         <?php

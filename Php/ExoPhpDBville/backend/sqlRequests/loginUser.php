@@ -34,6 +34,7 @@ if (isset($_POST["userLog"])) {
                         "USR_pseudo" => $user->getLastName(),
                         "USR_mail" => $user->getEmail(),
                         "USR_city" => $user->getCityName(),
+                        //ici je format la date en years-month-day
                         "USR_dtofbrth" => $user->getBirthDate()->format('Y-m-d'),
                     ];
                     //↓↓ici on peut le faire aussi d'une autre façons sans utilisé la class utilisateur↓↓

@@ -28,6 +28,9 @@ require("backend/sqlRequests/loginUser.php");
                 </form>
             </fieldset>
         </section>
+        <?php
+        require("include/bottomPapper.php");
+        ?>
     </main>
     <footer>
         <?php
