@@ -51,7 +51,7 @@ if (isset($_POST["userLog"])) {
                 echo "<p>Aucun utilisateur trouvé avec cet e-mail</p>";
             }
         } catch (PDOException $e) {
-            die("Connexion ERROR" . $e->getMessage());
+            die("Login ERROR" . $e->getMessage());
         }
     } else {
         echo "<p>Veuillez remplir tous les champs</p>";

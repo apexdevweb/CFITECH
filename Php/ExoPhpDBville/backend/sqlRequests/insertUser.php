@@ -22,6 +22,7 @@ if (isset($_POST["insertValidate"])) {
         if ($user_email !== false) {
             //je verifie si le premier password entrer correspond avec le deuxième
             if ($user_pass === $user_confirm_pass) {
+                // si les 2 passwords corresespondent alors je crypte le password
                 $user_crypted_pass = password_hash($_POST["userpass"], PASSWORD_ARGON2ID);
                 // je vérifie avec un SELECT dans une requête preparer par rapport à l'email si l'utilisateur est déjà existant dans la base de donnée 
                 $req_verif_exist = $bdd->prepare("SELECT user_mail FROM users WHERE user_mail = ?");
@@ -30,12 +31,16 @@ if (isset($_POST["insertValidate"])) {
                 if ($req_verif_exist->rowCount() > 0) {
                     echo "<p>" . "L'utilisateur existe déjà'" . "</p>";
                 } else {
-                    //si l'utilisateur n'est pas déjà enregistrer alors j'enregistre le nouvel utilisateur avec un INSERT INTO
-                    $req_insert_user = $bdd->prepare("INSERT INTO users (user_first_name, user_last_name, user_mail, user_pass, date_of_birth, user_city) VALUES (?,?,?,?,?,?)");
-                    $req_insert_user->execute([$user_first_name, $user_last_name, $user_email, $user_crypted_pass, $date_birth, $user_city]);
+                    try {
+                        //si l'utilisateur n'est pas déjà enregistrer alors j'enregistre le nouvel utilisateur avec un INSERT INTO
+                        $req_insert_user = $bdd->prepare("INSERT INTO users (user_first_name, user_last_name, user_mail, user_pass, date_of_birth, user_city) VALUES (?,?,?,?,?,?)");
+                        $req_insert_user->execute([$user_first_name, $user_last_name, $user_email, $user_crypted_pass, $date_birth, $user_city]);
 
-                    header("Location: login.php");
-                    exit();
+                        header("Location: login.php");
+                        exit();
+                    } catch (PDOException $e) {
+                        echo "insert user ERROR" . $e->getMessage();
+                    }
                 }
             } else {
                 echo "<p>" . "Les mots de pass ne correspondent pas" . "</p>";
