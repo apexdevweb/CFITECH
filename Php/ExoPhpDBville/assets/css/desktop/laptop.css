@@ -34,6 +34,9 @@
   /*section global content fin*/
   /*carte de profils*/
   .profil__card--main {
+    padding: 10px;
+    margin: 10px;
+    height: auto;
     width: 33vw;
     flex-flow: column nowrap;
     align-items: center;

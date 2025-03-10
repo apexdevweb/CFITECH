@@ -22,7 +22,7 @@ if (isset($_POST["insertValidate"])) {
         if ($user_email !== false) {
             //je verifie si le premier password entrer correspond avec le deuxième
             if ($user_pass === $user_confirm_pass) {
-                // si les 2 passwords corresespondent alors je crypte le password
+                // si les 2 passwords correspondent alors je crypte le password
                 $user_crypted_pass = password_hash($_POST["userpass"], PASSWORD_ARGON2ID);
                 // je vérifie avec un SELECT dans une requête preparer par rapport à l'email si l'utilisateur est déjà existant dans la base de donnée 
                 $req_verif_exist = $bdd->prepare("SELECT user_mail FROM users WHERE user_mail = ?");
