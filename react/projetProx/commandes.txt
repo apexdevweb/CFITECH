@@ -1,0 +1,13 @@
+Microsoft Windows [version 10.0.26100.3476]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\jhiro\Desktop\CFITECH\react\projetProx>npm install react-router-dom
+
+added 6 packages, and audited 156 packages in 2s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\jhiro\Desktop\CFITECH\react\projetProx>
