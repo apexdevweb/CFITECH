@@ -1,0 +1,116 @@
+{
+    "nom":"VTT 3x",
+    "marque":"Dyson",
+    "pays":"USA",
+    "vitesseMax":42.5, 
+    "connecte":true
+}
+
+[
+    {
+        "id_article":"1",
+        "article_name":"la gazzatta",
+        "description":"sport",
+        "created_at":"12/10/2021",
+        "update_at":"05/08/2022"
+    },
+    {
+        "id_article":"2",
+        "article_name":"il corriere",
+        "description":"politica",
+        "created_at":"12/10/2021",
+        "update_at":"05/08/2022"
+    }
+]
+
+{
+    "article1": {
+        "id_article":1,
+        "article_name":"Hello le monde après covid",
+        "description":"Atchoum",
+        "user": {
+            "id_user":1,
+            "firstname":"Beyonce",
+            "lastname":"Knowles",
+            "gender":"F",
+            "date_of_birth":"1976-02-06",
+            "city":"Washington",
+            "weight_kg":75 
+        }
+    },
+    "article2": {
+        "id_article":2,
+        "article_name":"Blabla au pays de mickey",
+        "description":"Oui oui",
+        "user": {
+            "id_user":3,
+            "firstname":"Bond",
+            "lastname":"James",
+            "gender":"M",
+            "date_of_birth":"2000-12-16",
+            "city":"London",
+            "weight_kg":85  
+        }
+    }
+}
+
+
+{
+    "article1": {
+        "id_article":1,
+        "article_name":"Hello le monde après covid",
+        "description":"Atchoum",
+        "user": {
+            "id_user":1,
+            "firstname":"Beyonce",
+            "lastname":"Knowles",
+            "gender":"F",
+            "date_of_birth":"1976-02-06",
+            "city":"Washington",
+            "weight_kg":75 
+        }
+    },
+    "article2": {
+        "id_article":2,
+        "article_name":"Blabla au pays de mickey",
+        "description":"Oui oui",
+        "user": {
+            "id_user":3,
+            "firstname":"Bond",
+            "lastname":"James",
+            "gender":"M",
+            "date_of_birth":"2000-12-16",
+            "city":"London",
+            "weight_kg":85  
+        }
+    }
+}  
+Julien (Prof) — 14-03-25 12:06
+exo5
+{
+    "article":"L'univers",
+    "contenu":"L'univers est composé d'être",
+    "auteur":{
+        "nom":"Dunia",
+        "prenom":"Julien",
+        "age":140
+    },
+    "commentaires":[
+        {
+            "username":"Mona",
+            "contenu":"C'est pas mal d'y vivre",
+            "reponses": [
+                {
+                    "username":"Olga",
+                    "contenu":"En effet !!",
+                    "reponses":[]
+                }
+            ]
+        },
+        {
+           "username":"Mike",
+            "contenu":"Bullshit !!!",
+            "reponses": []
+        }
+    ]  
+}

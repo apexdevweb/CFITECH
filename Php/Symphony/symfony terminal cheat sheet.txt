@@ -1,0 +1,36 @@
+↓↓ Pour listé toutes les version php de Symfony sur mon pc↓↓
+
+symfony local:php:list
+
+↓↓ pour lancer le serveur symfony↓↓
+
+symfony server:start
+
+(et Ctrl + clic droit sur le liens pour lancer la page)
+
+symfony server:start -d (ou le raccourci symfony serve -d)
+
+↓↓ pour lister les serveurs actifs de Symfony ↓↓
+
+symfony server:list
+
+↓↓ pour arrêter le serveur symfony↓↓
+(au moins 3 fois)
+
+dans le terminal → Ctrl + c
+
+ou
+
+Symfony server:stop
+
+↓↓ pour ouvrir la page symfony↓↓
+
+Symfony open:local
+
+↓↓ pour ouvrir la page Symfony en https↓↓
+
+symfony server:ca:install
+
+↓↓ pour faire un controller↓↓
+
+symfony console make:controller Home
