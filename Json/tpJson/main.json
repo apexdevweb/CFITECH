@@ -1,0 +1,34 @@
+{
+"star": [
+    {
+      "firstname": "Tom",  
+      "lastname": "Cruize",  
+      "lastmovie": "Mission: Impossible - the finale reckoning ",
+      "isAmerican": true 
+    },
+    {
+        "firstname": "Omar",  
+        "lastname": "Sy",  
+        "lastmovie": "The killer",
+        "isAmerican": false 
+    },
+    {
+        "firstname": "Denzel",  
+        "lastname": "Washington",  
+        "lastmovie": "The rift",
+        "isAmerican": true 
+    },
+    {
+        "firstname": "Emilie",  
+        "lastname": "Blunt",  
+        "lastmovie": "Discolsure",
+        "isAmerican": false
+    },
+    {
+        "firstname": "Julia",  
+        "lastname": "Roberts",  
+        "lastmovie": "After the hunt",
+        "isAmerican": true 
+    }
+]
+}
