@@ -1,0 +1,20 @@
+@import "article.css";
+@import "title.css";
+*::before,*::after{
+    box-sizing: border-box;
+}
+
+.form__signup--container{
+    height: auto;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.sub__main--container{
+    padding: 5px;
+    height: auto;
+    width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-evenly;
+}

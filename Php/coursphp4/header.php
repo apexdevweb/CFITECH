@@ -65,6 +65,9 @@
       <li class="nav-item <?php if($nav === "dashboard"): ?>active<?php endif ?>">
         <a class="nav-link" href="dashboard.php">Dashboard</a>
       </li>
+      <li class="nav-item <?php if($nav === "smartphone"): ?>active<?php endif ?>">
+        <a class="nav-link" href="smartphone.php">Smartphone</a>
+      </li>
       <?php if(is_connected()): ?>
       <li class="nav-item <?php if($nav === "bd"): ?>active<?php endif ?>">
         <a class="nav-link" href="baseDeDonnees.php">Base de données</a>

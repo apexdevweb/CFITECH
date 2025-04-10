@@ -11,7 +11,7 @@
 <h1>Section Base de données</h1>
 <?php 
     try{
-        $pdo = new PDO('mysql:dbname=coursql4;host=localhost', "root",""); 
+        $pdo = new PDO('mysql:dbname=cfitech_mobile;host=localhost', "root",""); 
         //On définit le mode d'erreur de PDO sur Exception
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo 'Connexion réussie';

@@ -1,0 +1,13 @@
+article{
+    height: 25vh;
+    width: 25vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 5px;
+}
