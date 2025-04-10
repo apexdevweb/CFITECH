@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Github Exo1S</title>
-</head>
-<body>
-    <h1>Hello Git</h1>
-    <script src="assets/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hello Git</h1>
+      <nav>
+        <ul class="header__nav">
+          <li class="header__nav--el"><a href="index.html">Home</a></li>
+          <li class="header__nav--el"><a href="login.html">Login</a></li>
+          <li class="header__nav--el"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr class="separator__A" />
+    <main>
+      <div class="wrapper">
+        <article class="home__article">
+          <hgroup class="article__title--container">
+            <h3>Lorem, ipsum.</h3>
+            <h4>Lorem, ipsum dolor.</h4>
+          </hgroup>
+          <div class="wrapper__article">
+            <blockquote class="article__figure--textblock">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                <br />
+                provident expedita ex velit aliquam consequatur quidem, numquam
+                <br />
+                molestias optio eaque fugiat animi nam officiis veniam! <br />
+              </p>
+            </blockquote>
+            <figure class="article__figure">
+              <img
+                class="article__figure--image"
+                src="assets/images/githubPapper.jpg"
+                alt="myImg"
+              />
+              <figcaption class="article__figure--caption">
+                <small>Lorem ipsum dolor sit.</small>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <em>©Jeremy H</em>
+    </footer>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

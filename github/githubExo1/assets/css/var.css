@@ -1,0 +1,8 @@
+:root{
+    --font-family-ftfmlMainTitle: "Lobster", sans-serif;
+    --font-family-ftfmlSubTitle: "Bebas Neue", sans-serif;
+    --font-family-ftfmlText: "National Park", sans-serif;
+    --font-size-ftszSmall: 1.1rem;
+    --font-size-ftszMedium: 1.4rem;
+    --font-size-ftszBig: 4rem;
+}

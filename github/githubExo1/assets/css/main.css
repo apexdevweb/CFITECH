@@ -1,0 +1,87 @@
+.home__article {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.article__title--container {
+  height: auto;
+  width: 25vw;
+  text-align: left;
+}
+.article__title--container > h3,
+h4 {
+  letter-spacing: 4px;
+  font-family: var(--font-family-ftfmlSubTitle);
+}
+.wrapper__article {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.article__figure {
+  height: auto;
+  width: auto;
+}
+.article__figure--textblock {
+  text-align: center;
+  font-family: var(--font-family-ftfmlText);
+}
+.article__figure--textblock > p {
+  text-align: left;
+  width: 35ch;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.article__figure--image {
+  border-radius: 15px;
+  height: 45vh;
+  width: auto;
+}
+.article__figure--caption {
+  text-align: center;
+  font-family: var(--font-family-ftfmlText);
+}
+/*formulair Globale*/
+fieldset {
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+legend {
+  text-align: center;
+  font-size: var(--font-size-ftszMedium);
+  font-family: var(--font-family-ftfmlMainTitle);
+}
+textarea{
+    resize: none;
+    border-radius: 5px;
+}
+input[type="text"] {
+    border-radius: 5px;
+}
+input[type="email"] {
+    border-radius: 5px;
+}
+input[type="password"] {
+    border-radius: 5px;
+}
+input[type="submit"] {
+    border-radius: 5px;
+    background: transparent;
+    letter-spacing: 3px;
+}
+input[type="submit"]:hover {
+    transition: 0.3s ease;
+    transform: scale(1.09);
+    background-color: #000;
+    color: #fff;
+}
+/*formulair Login*/
+/*formulair Contact*/

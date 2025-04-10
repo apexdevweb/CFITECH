@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=National+Park:wght@200..800&display=swap');
+@import "var.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: auto;
+    width: 100%;
+}
