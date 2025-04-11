@@ -4,7 +4,53 @@
   padding: 2rem;
   text-align: center;
 }
-
+/*nav*/
+ul {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+ul > li {
+  height: auto;
+  width: 5vw;
+  list-style-type: none;
+}
+/*nav fin*/
+/*contact*/
+form{
+  height: 25vh;
+  width:100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.inpt__container{
+  padding: 10px;
+  height:5vh;
+  width:50vw;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+input[type="text"]{
+  height: 4vh;
+  width: 5vw;
+}
+input[type="email"]{
+  height: 4vh;
+  width: 7vw;
+}
+.inpt__logo{
+  font-size: 3rem;
+}
+/*contact fin*/
 .logo {
   height: 6em;
   padding: 1.5em;
